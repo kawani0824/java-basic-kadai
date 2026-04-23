@@ -1,0 +1,37 @@
+PS C:\Users\093111_226303> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\093111_226303
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                                  
+----                 -------------         ------ ----                                                                                                                                  
+d-----        2026/04/23      9:47                git_challenge                                                                                                                         
+
+
+PS C:\Users\093111_226303> cd git_challenge
+PS C:\Users\093111_226303\git_challenge> git init
+Initialized empty Git repository in C:/Users/093111_226303/git_challenge/.git/
+PS C:\Users\093111_226303\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\Users\093111_226303\git_challenge> git add hello_world.txt
+PS C:\Users\093111_226303\git_challenge> git commit -m "Hello world!"                  
+[main (root-commit) 623693d] Hello world!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\093111_226303\git_challenge> git commit -m "こんにちは　世界！"            
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\093111_226303\git_challenge> git add hello_world.txt
+PS C:\Users\093111_226303\git_challenge> git commit -m "Hello world!.txtを追加"   
+[main 53e0243] Hello world!.txtを追加
+ 1 file changed, 1 insertion(+)
+PS C:\Users\093111_226303\git_challenge> git add hello_world.txt                  
+PS C:\Users\093111_226303\git_challenge> git commit -m "日本語訳を追記"           
+[main d7d732b] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\093111_226303\git_challenge> git log --oneline 
+d7d732b (HEAD -> main) 日本語訳を追記
+53e0243 Hello world!.txtを追加
+623693d Hello world!
+PS C:\Users\093111_226303\git_challenge> 
